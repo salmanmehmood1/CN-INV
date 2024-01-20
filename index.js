@@ -21,6 +21,6 @@ app.use("/purchase", require("./routes/purchase"));
 app.use("/payment", require("./routes/payment"));
 app.use("/journal", require("./routes/journal"));
 
-app.listen(process.env.PORT | port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server is running on port ${port}`);
 });
